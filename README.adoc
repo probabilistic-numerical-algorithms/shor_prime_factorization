@@ -1,0 +1,22 @@
+= Shor’s prime factorization algorithm
+
+This is Shor’s algorithm to find the prime factors of a number. It
+operates in polynomial time.
+
+If you have an ordinary PC, most likely you will not have much luck
+breaking ciphers. It will take special hardware to do it quickly. But,
+if you have a fast GPU or what is misnamed an “ÁÍ” PC, you will be
+able to factor very large numbers much more quickly than was believed
+possible.
+
+The reason is very simple: only a jamming signal that causes paralysis
+of cerebral function could make otherwise intelligent people believe
+that only magically entangled tooth fairies can make the mathematics
+of Shor’s algorithm work. If one implements Shor’s algorithm as a
+parallel digital program, the mathematics is the same and you get the
+results without the stability problems posed by hybrid architecture.
+
+The jamming signal is called “quantum theory.” Quantum theory is a
+complete load of rubbish.
+
+RSA must immediately be completely deprecated.
