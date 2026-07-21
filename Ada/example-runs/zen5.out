@@ -1,6 +1,22 @@
-$ LIBRARY_PATH=/usr/local/lib PATH=/home/trashman/src/probabilistic-numerical-algorithms/gnat2022-parallel-binary/bin:$PATH gnatmake test_prime_factor_ada -cargs -O3 -I/usr/local/lib -mno-rdseed
+$ LIBRARY_PATH=/usr/local/lib PATH=/home/trashman/src/probabilistic-numerical-algorithms/gnat2022-parallel-binary/bin:$PATH gnatmake test_prime_factor_ada -cargs -O3 -I/usr/local/lib -mno-rdseed -ftree-vectorize -fopt-info-vec
 
-gnatmake: "test_prime_factor_ada" up to date.
+gcc -c -O3 -I/usr/local/lib -mno-rdseed -ftree-vectorize -fopt-info-vec test_prime_factor_ada.adb
+test_prime_factor_ada.adb:80:7: optimized: basic block part vectorized using 8 byte vectors
+test_prime_factor_ada.adb:80:7: optimized: basic block part vectorized using 8 byte vectors
+gcc -c -O3 -I/usr/local/lib -mno-rdseed -ftree-vectorize -fopt-info-vec prime_factor_ada.adb
+prime_factor_ada.ads:38:9: optimized: basic block part vectorized using 16 byte vectors
+prime_factor_ada.adb:352:4: optimized: basic block part vectorized using 16 byte vectors
+prime_factor_ada.adb:297:7: optimized: basic block part vectorized using 8 byte vectors
+prime_factor_ada.adb:308:22: optimized: basic block part vectorized using 16 byte vectors
+prime_factor_ada.adb:314:22: optimized: basic block part vectorized using 16 byte vectors
+prime_factor_ada.adb:408:14: optimized: loop vectorized using 64 byte vectors and unroll factor 16
+prime_factor_ada.adb:339:38: optimized: basic block part vectorized using 16 byte vectors
+gnatbind -x test_prime_factor_ada.ali
+gnatlink test_prime_factor_ada.ali
+/home/trashman/src/probabilistic-numerical-algorithms/shor_prime_factorization/Ada/b~test_prime_factor_ada.adb:164:49: optimized: basic block part vectorized using 4 byte vectors
+/home/trashman/src/probabilistic-numerical-algorithms/shor_prime_factorization/Ada/b~test_prime_factor_ada.adb:164:49: optimized: basic block part vectorized using 4 byte vectors
+/home/trashman/src/probabilistic-numerical-algorithms/shor_prime_factorization/Ada/b~test_prime_factor_ada.adb:164:49: optimized: basic block part vectorized using 4 byte vectors
+/home/trashman/src/probabilistic-numerical-algorithms/shor_prime_factorization/Ada/b~test_prime_factor_ada.adb:164:49: optimized: basic block part vectorized using 8 byte vectors
 $ $ time ./test_prime_factor_ada
 =============================================================
   PRIME FACTORIZATION COMPREHENSIVE TEST SUITE (ADA 2022)
@@ -141,5 +157,4 @@ Tests run:    16
 Tests passed:  16
 OVERALL STATUS: ALL TESTS PASSED
 =============================================================
-./test_prime_factor_ada  5.49s user 0.01s system 145% cpu 3.796 total
-$
+./test_prime_factor_ada  5.64s user 0.02s system 143% cpu 3.934 total
