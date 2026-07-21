@@ -19,4 +19,22 @@ results without the stability problems posed by hybrid architecture.
 The jamming signal is called “quantum theory.” Quantum theory is a
 complete load of rubbish.
 
-RSA must immediately be completely deprecated.
+Quantum theory is worse than rubbish. Niels Bohr’s “principle of
+complementarity” is functionally similar to the requirement in
+Orwell’s _Nineteen Eighty-Four_ that Party members believe
+simultaneously in the truth and falsehood of a proposition. I believe
+Bohr’s principle causes a psychic need to misunderstand mathematics
+and do it incorrectly. For instance, if quantum theorists understood
+that differential calculus is based on no-action-at-a-distance, then
+entangled tooth fairies could not exist—therefore quantum theorists
+have a psychic need not to understand differential calculus.
+
+The software here is based on the epistemological assumption that
+there is no such thing as action-at-a-distance, without which
+mathematics would be useless.
+
+RSA must be completely deprecated.
+
+IMPORTANT: I AM A DISABLED SENIOR CITIZEN SO LEAVE ME ALONE. I CANNOT
+HANDLE ATTENTION. SORT IT OUT BETWEEN YOURSELVES. I post snapshots of
+research at https://archive.org/details/unified-field-theory/
