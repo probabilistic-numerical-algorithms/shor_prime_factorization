@@ -1,0 +1,145 @@
+$ LIBRARY_PATH=/usr/local/lib PATH=/home/trashman/src/probabilistic-numerical-algorithms/gnat2022-parallel-binary/bin:$PATH gnatmake test_prime_factor_ada -cargs -O3 -I/usr/local/lib -mno-rdseed
+
+gnatmake: "test_prime_factor_ada" up to date.
+$ $ time ./test_prime_factor_ada
+=============================================================
+  PRIME FACTORIZATION COMPREHENSIVE TEST SUITE (ADA 2022)
+=============================================================
+
+-------------------------------------------------------------
+TEST  1: Factorizing N =  4
+-------------------------------------------------------------
+Factors found:   2 *  2
+Product of factors:  4
+Are all factors prime? TRUE
+STATUS: PASS
+
+-------------------------------------------------------------
+TEST  2: Factorizing N =  12
+-------------------------------------------------------------
+Factors found:   2 *  2 *  3
+Product of factors:  12
+Are all factors prime? TRUE
+STATUS: PASS
+
+-------------------------------------------------------------
+TEST  3: Factorizing N =  15
+-------------------------------------------------------------
+Factors found:   3 *  5
+Product of factors:  15
+Are all factors prime? TRUE
+STATUS: PASS
+
+-------------------------------------------------------------
+TEST  4: Factorizing N =  35
+-------------------------------------------------------------
+Factors found:   5 *  7
+Product of factors:  35
+Are all factors prime? TRUE
+STATUS: PASS
+
+-------------------------------------------------------------
+TEST  5: Factorizing N =  143
+-------------------------------------------------------------
+Factors found:   11 *  13
+Product of factors:  143
+Are all factors prime? TRUE
+STATUS: PASS
+
+-------------------------------------------------------------
+TEST  6: Factorizing N =  1024
+-------------------------------------------------------------
+Factors found:   2 *  2 *  2 *  2 *  2 *  2 *  2 *  2 *  2 *  2
+Product of factors:  1024
+Are all factors prime? TRUE
+STATUS: PASS
+
+-------------------------------------------------------------
+TEST  7: Factorizing N =  4087
+-------------------------------------------------------------
+Factors found:   61 *  67
+Product of factors:  4087
+Are all factors prime? TRUE
+STATUS: PASS
+
+-------------------------------------------------------------
+TEST  8: Factorizing N =  999999
+-------------------------------------------------------------
+Factors found:   3 *  3 *  3 *  7 *  11 *  13 *  37
+Product of factors:  999999
+Are all factors prime? TRUE
+STATUS: PASS
+
+-------------------------------------------------------------
+TEST  9: Factorizing N =  123456789
+-------------------------------------------------------------
+Factors found:   3 *  3 *  3607 *  3803
+Product of factors:  123456789
+Are all factors prime? TRUE
+STATUS: PASS
+
+-------------------------------------------------------------
+TEST  10: Factorizing N =  11111111111
+-------------------------------------------------------------
+Factors found:   21649 *  513239
+Product of factors:  11111111111
+Are all factors prime? TRUE
+STATUS: PASS
+
+-------------------------------------------------------------
+TEST  11: Factorizing N =  17
+-------------------------------------------------------------
+Factors found:   17
+Product of factors:  17
+Are all factors prime? TRUE
+STATUS: PASS
+
+-------------------------------------------------------------
+TEST  12: Factorizing N =  1152921504606641767
+-------------------------------------------------------------
+Factors found:   1073741371 *  1073742277
+Product of factors:  1152921504606641767
+Are all factors prime? TRUE
+STATUS: PASS
+
+-------------------------------------------------------------
+TEST  13: Factorizing N =  2305843009212522371
+-------------------------------------------------------------
+Factors found:   1518494123 *  1518506377
+Product of factors:  2305843009212522371
+Are all factors prime? TRUE
+STATUS: PASS
+
+-------------------------------------------------------------
+TEST  14: Factorizing N =  4611686018425746943
+-------------------------------------------------------------
+Factors found:   2147482367 *  2147484929
+Product of factors:  4611686018425746943
+Are all factors prime? TRUE
+STATUS: PASS
+
+-------------------------------------------------------------
+TEST  15: Factorizing N =  4611686018425746947
+-------------------------------------------------------------
+Factors found:   109 *  181 *  233751635583443
+Product of factors:  4611686018425746947
+Are all factors prime? TRUE
+STATUS: PASS
+
+-------------------------------------------------------------
+TEST  16: Factorizing N =  4611686018425746979
+-------------------------------------------------------------
+Factors found:   19 *  23 *  397 *  910051 *  29209361
+Product of factors:  4611686018425746979
+Are all factors prime? TRUE
+STATUS: PASS
+
+=============================================================
+  TEST SUITE SUMMARY
+=============================================================
+Tests run:    16
+Tests passed:  16
+OVERALL STATUS: ALL TESTS PASSED
+=============================================================
+./test_prime_factor_ada  5.49s user 0.01s system 145% cpu 3.796 total
+$
